@@ -7,7 +7,7 @@ network:
   ethernets:
 
     enp0s3:
-      dhcp4: true
+      dhcp4: false
 
       addresses:
         - 192.168.16.10/24
