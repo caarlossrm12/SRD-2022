@@ -26,4 +26,5 @@ network:
           metric: 100
       
       nameservers:
+        search: [carlosrm.edu]
         addresses: [8.8.8.8]
