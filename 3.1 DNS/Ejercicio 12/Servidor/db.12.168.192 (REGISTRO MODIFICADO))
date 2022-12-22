@@ -1,0 +1,9 @@
+$TTL 604800 ; 1 week
+@	IN SOA carlosrm-linux.carlosrm.edu. root.carlosrm.edu. (
+				3 360000 3600 3600000 360000 )
+				IN NS carlosrm-linux.carlosrm.edu.
+6				IN PTR carlosrm-linux.carlosrm.edu.
+6				IN PTR aliascarlosrm.carlosrm.edu.
+7				IN PTR PC-01.carlosrm.edu.
+18				IN PTR carlosrm-esclavo.carlosrm.edu.
+80.12.168.192.in-addr.arpa.       IN PTR otro.carlosrm.edu.
