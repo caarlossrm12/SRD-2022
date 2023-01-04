@@ -1,6 +1,6 @@
 $TTL 604800 ; 1 week
 @ IN SOA carlosrm-linux.carlosrm.edu. root.carlosrm.edu. (
-					3 ; serial no
+					8 ; serial no
 					360000 ; refresh
 					3600 ; retry
 					3600000 ; expire
