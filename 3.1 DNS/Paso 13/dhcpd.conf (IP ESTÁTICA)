@@ -22,7 +22,7 @@ subnet 192.168.12.0 netmask 255.255.255.0 {
 	
 	host cliente {
 		hardware ethernet 08:00:27:3B:D2:A2;
-		fixed-address 192.168.12.124;
+		fixed-address 192.168.12.132;
 		ddns-hostname "carlosrm-cliente";
 }
 }
