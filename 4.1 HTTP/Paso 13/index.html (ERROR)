@@ -1,0 +1,12 @@
+<html>
+        <head>
+                <meta hhtp-equiv="Content-Type" content="text/html"; charset=UTF>
+                <title> Página de Error </title>
+        </head>
+        <body>
+                <h1>ERROR</h1>
+                <h2> - Error al cargar la pagina Web :( - </h2>
+                <h3> --- Vuelva a intentarlo mas tarde --- </h3>
+
+        </body>
+</html>
