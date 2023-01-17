@@ -10,4 +10,4 @@ $TTL 604800 ; 1 week
 carlosrm-linux.carlosrm.edu.		IN A 192.168.12.2
 virtual5.carlosrm.edu.			IN A 192.168.12.7
 otro.carlosrm.edu.			IN CNAME virtual5.carlosrm.edu.
-*.alias.carlosrm.edu.			IN A 192.168.12.2https://github.com/caarlossrm12/SRD-2022
+*.alias.carlosrm.edu.			IN A 192.168.12.2
