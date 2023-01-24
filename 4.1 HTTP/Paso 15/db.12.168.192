@@ -5,4 +5,4 @@ $TTL 604800 ; 1 week
 2			IN PTR carlosrm-linux.carlosrm.edu.
 2			IN PTR otro.carlosrm.edu.
 2			IN PTR virtual5.carlosrm.edu.
-7     IN PTR virtual6.carlosrm.edu.
+4     IN PTR virtual6.carlosrm.edu.
