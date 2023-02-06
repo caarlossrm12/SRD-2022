@@ -1,0 +1,49 @@
+# This file is commonly accessed via passdb {} or userdb {} section in
+# conf.d/auth-sql.conf.ext
+
+driver = mysql
+connect = host=127.0.0.1 dbname=vmail user=vmailadmin password=123
+default_pass_scheme = PLAIN-MD5
+password_query = SELECT email AS user, password FROM virtualusers WHERE (email='%u' OR username='%n') AND active=1
+
+# This file is opened as root, so it should be owned by root and mode 0600.
+#
+# http://wiki2.dovecot.org/AuthDatabase/SQL
+#
+# For the sql passdb module, you'll need a database with a table that
+# contains fields for at least the username and password. If you want to
+# use the user@domain syntax, you might want to have a separate domain
+# field as well.
+#
+# If your users all have the same uig/gid, and have predictable home
+# directories, you can use the static userdb module to generate the home
+# dir based on the username and domain. In this case, you won't need fields
+# for home, uid, or gid in the database.
+#
+# If you prefer to use the sql userdb module, you'll want to add fields
+# for home, uid, and gid. Here is an example table:
+#
+# CREATE TABLE users (
+#     username VARCHAR(128) NOT NULL,
+#     domain VARCHAR(128) NOT NULL,
+#     password VARCHAR(64) NOT NULL,
+#     home VARCHAR(255) NOT NULL,
+#     uid INTEGER NOT NULL,
+#     gid INTEGER NOT NULL,
+#     active CHAR(1) DEFAULT 'Y' NOT NULL
+# );
+
+# Database driver: mysql, pgsql, sqlite
+#driver = 
+
+# Database connection string. This is driver-specific setting.
+#
+# HA / round-robin load-balancing is supported by giving multiple host
+# settings, like: host=sql1.host.org host=sql2.host.org
+#
+# pgsql:
+#   For available options, see the PostgreSQL documentation for the
+#   PQconnectdb function of libpq.
+#   Use maxconns=n (default 5) to change how many connections Dovecot can
+#   create to pgsql.
+#
