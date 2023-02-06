@@ -1,0 +1,11 @@
+$TTL 604800 ; 1 week
+@ IN SOA carlosrm-linux.carlosrm.edu. root.carlosrm.edu. (
+			                      		1 ; serial no
+				                      	360000 ; refresh
+			                      		3600 ; retry
+				                      	3600000 ; expire
+				                      	3600 ; default ttl
+					                      )
+				                      	IN NS carlosrm-linux.carlosrm.edu.
+carlosrm-linux.carlosrm.edu.		IN A 192.168.1.193
+carlosrm.edu.				            IN MX 10 carlosrm-linux.carlosrm.edu.
