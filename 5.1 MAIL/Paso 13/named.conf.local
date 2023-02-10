@@ -15,5 +15,5 @@ zone "carlosrm.edu"
 zone "104.168.192.in-addr.arpa"
         {
                 type master;
-                file "/var/lib/bind/zones/db.12.168.192";
+                file "/var/lib/bind/zones/db.104.168.192";
         };
